@@ -17,9 +17,3 @@ shared_script{
     'config.lua',
     'config_function.lua',
 }
-
-
-escrow_ignore {
-    'config.lua',
-    'config_function.lua',
-}
