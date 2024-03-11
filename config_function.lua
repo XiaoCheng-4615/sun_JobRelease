@@ -5,7 +5,9 @@ function HandleJobOrder(xPlayer, zPlayer, zPlayerId)
         NotifyAllPlayers('^3職業接單通知: ^0[ ' .. xPlayer.job.label .. ' ] ' .. xPlayer.name, zPlayer.name, zPlayerId)
         -- 公頻輸出 職業接單通知 [警局] 接單者名稱 被接單者名稱  被接單者ID
         local coords = zPlayer.getCoords(true)
-        TriggerClientEvent('sun_JobRelease:sumbit', source, coords, xPlayer)
+         if Config.enable_pos then
+            TriggerClientEvent('sun_JobRelease:sumbit', source, coords, xPlayer)
+        end
         NotifyzPlayer(zPlayerId, xPlayer.name)
         SendToDiscord(xPlayer, zPlayer, zPlayerId)
     else
