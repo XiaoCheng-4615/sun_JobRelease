@@ -11,7 +11,7 @@ Config.job = {  -- 設定職業那些職業可以使用
 }
 
 Config.usepNotify = true -- 通知使用pNotify 
-Config.enable_pos = true. -- 接單自動標點
+Config.enable_pos = true -- 接單自動標點
 
 Config.DiscordWebhook = 'https://discord.com/api/webhooks/'
 
